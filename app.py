@@ -2,15 +2,16 @@ from flask import Flask, request, jsonify
 import openai
 import os
 from dotenv import load_dotenv
+from flask_cors import CORS
+
 
 load_dotenv()  # Carga variables desde el .env
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
-
+CORS(app) 
 app = Flask(__name__)
 
 # Reemplaza esto con tu propia clave de proyecto (la tuya ya está puesta aquí)
-
 
 @app.route("/chat", methods=["POST"])
 def chat():
