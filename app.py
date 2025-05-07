@@ -4,6 +4,11 @@ import openai
 import os
 import json
 from dotenv import load_dotenv
+from collections import defaultdict
+import time
+
+# Diccionario para guardar historial de cada sesión en memoria
+historial_conversaciones = defaultdict(list)
 
 # Cargar variables de entorno (si estás en local)
 load_dotenv()
@@ -85,38 +90,64 @@ A continuación, tienes el listado de categorías disponibles en el sitio para p
 """
 
 # Construir el prompt completo combinando reglas + categorías
-def construir_mensaje_usuario(pregunta):
+def construir_mensaje_con_historial(user_id, pregunta):
     categorias_texto = "\n".join([
         f"- {cat['nombre_categoria']}: {cat['descripcion_categoria']}"
         for cat in base_conocimiento["categorias"]
     ])
     system_prompt = BASE_PROMPT.format(categorias=categorias_texto)
-    return [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": pregunta}
-    ]
+
+    # Si es la primera vez que vemos este user_id, iniciamos con prompt base
+    if not historial_conversaciones[user_id]:
+        historial_conversaciones[user_id].append({
+            "role": "system",
+            "content": system_prompt
+        })
+        # No forzamos presentación, GPT decidirá según si detecta saludo
+    # Agregamos el nuevo mensaje del usuario al historial
+    historial_conversaciones[user_id].append({
+        "role": "user",
+        "content": pregunta
+    })
+
+    return historial_conversaciones[user_id]
+
 
 # Ejecutar GPT
-def preguntar_a_gpt(pregunta):
-    messages = construir_mensaje_usuario(pregunta)
+def preguntar_a_gpt(user_id, pregunta):
+    messages = construir_mensaje_con_historial(user_id, pregunta)
     response = openai.ChatCompletion.create(
-        model="gpt-4",  # Puedes cambiar a "gpt-3.5-turbo" si es necesario
+        model="gpt-4",
         messages=messages,
         temperature=0.5,
         max_tokens=700
     )
-    return response["choices"][0]["message"]["content"]
+    respuesta = response["choices"][0]["message"]["content"]
+
+    # Agregamos respuesta del asistente al historial
+    historial_conversaciones[user_id].append({
+        "role": "assistant",
+        "content": respuesta
+    })
+
+    return respuesta
 
 # Endpoint principal del chatbot
 @app.route("/chat", methods=["POST"])
 def chat():
     prompt = request.json.get("prompt", "")
+    user_id = request.json.get("user_id", "")
+
+    if not user_id:
+        return jsonify({"error": "Falta user_id"}), 400
+
     try:
-        respuesta = preguntar_a_gpt(prompt)
+        respuesta = preguntar_a_gpt(user_id, prompt)
         return jsonify({"response": respuesta})
     except Exception as e:
         print("❌ Error:", e)
         return jsonify({"error": str(e)}), 500
+
 
 # Ejecutar localmente o en Render
 if __name__ == "__main__":
