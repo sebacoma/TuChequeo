@@ -1,0 +1,35 @@
+{
+    "categorias": [
+      {
+        "nombre_categoria": "Chequeo Festivo",
+        "descripcion_categoria": "Chequeos ideales para antes o después de celebraciones, enfocados en azúcar en sangre, hígado, vesícula, páncreas, colesterol y triglicéridos.",
+        "examenes": []
+      },
+      {
+        "nombre_categoria": "Chequeo General de Salud",
+        "descripcion_categoria": "Exámenes básicos para evaluar estado general como hemograma, función tiroidea, glicemia y colesterol.",
+        "examenes": []
+      },
+      {
+        "nombre_categoria": "Chequeo Infeccioso",
+        "descripcion_categoria": "Exámenes para detección de infecciones respiratorias o digestivas.",
+        "examenes": []
+      },
+      {
+        "nombre_categoria": "Chequeo Post COVID-19",
+        "descripcion_categoria": "Chequeos dirigidos a personas que tuvieron COVID-19 y presentan síntomas persistentes como fatiga o dificultad respiratoria.",
+        "examenes": []
+      },
+      {
+        "nombre_categoria": "Chequeo Pulmonar",
+        "descripcion_categoria": "Exámenes enfocados en salud pulmonar, función respiratoria, y chequeos para personas fumadoras o con exposición a agentes químicos.",
+        "examenes": []
+      },
+      {
+        "nombre_categoria": "Chequeo Personalizado",
+        "descripcion_categoria": "Servicio donde puedes solicitar un chequeo adaptado a tus necesidades si no encuentras el examen que buscas.",
+        "examenes": []
+      }
+    ]
+  }
+  
