@@ -1,35 +1,140 @@
 {
-    "categorias": [
-      {
-        "nombre_categoria": "Chequeo Festivo",
-        "descripcion_categoria": "Chequeos ideales para antes o después de celebraciones, enfocados en azúcar en sangre, hígado, vesícula, páncreas, colesterol y triglicéridos.",
-        "examenes": []
-      },
-      {
-        "nombre_categoria": "Chequeo General de Salud",
-        "descripcion_categoria": "Exámenes básicos para evaluar estado general como hemograma, función tiroidea, glicemia y colesterol.",
-        "examenes": []
-      },
-      {
-        "nombre_categoria": "Chequeo Infeccioso",
-        "descripcion_categoria": "Exámenes para detección de infecciones respiratorias o digestivas.",
-        "examenes": []
-      },
-      {
-        "nombre_categoria": "Chequeo Post COVID-19",
-        "descripcion_categoria": "Chequeos dirigidos a personas que tuvieron COVID-19 y presentan síntomas persistentes como fatiga o dificultad respiratoria.",
-        "examenes": []
-      },
-      {
-        "nombre_categoria": "Chequeo Pulmonar",
-        "descripcion_categoria": "Exámenes enfocados en salud pulmonar, función respiratoria, y chequeos para personas fumadoras o con exposición a agentes químicos.",
-        "examenes": []
-      },
-      {
-        "nombre_categoria": "Chequeo Personalizado",
-        "descripcion_categoria": "Servicio donde puedes solicitar un chequeo adaptado a tus necesidades si no encuentras el examen que buscas.",
-        "examenes": []
-      }
-    ]
-  }
-  
+  "categorias": [
+    {
+      "nombre_categoria": "Chequeo General de Salud",
+      "descripcion_categoria": "Esta categoría fue cuidadosamente creada por el doctor Gustavo Núñez para que sea el mejor comienzo para evaluar el estado general de salud, está condesado lo más general e importante si quieres mantener la salud y evitar la enfermedad",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Chequeo Preventivo Femenino",
+      "descripcion_categoria": "Exámenes diseñados para mujeres, enfocados en la prevención y también en la detección temprana de enfermedades específicas del género.",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Chequeo de ETS y Salud Sexual",
+      "descripcion_categoria": "En esta categoría se encuentran los exámenes para la detección de enfermedades de transmisión sexual y evaluación general de la salud sexual.",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Chequeo Preventivo de Diabetes y Resistencia a la Insulina",
+      "descripcion_categoria": "Exámenes preventivos orientados a la prevención y detección temprana de resistencia a la insulina y diabetes.",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Chequeo de Tiroides",
+      "descripcion_categoria": "Evaluación de la función tiroidea mediante pruebas generales de laboratorio y también específicas como algunos anticuerpos para detectar enfermedades autoinmunes más frecuentes de la tiroides, también está la ecografía de tiroides para evaluar nódulos o descartar cáncer de tiroides.",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Chequeo de Embarazo",
+      "descripcion_categoria": "Exámenes específicos de sangre para confirmar el embarazo y otros monitorear el mismo como algunos niveles de vitaminas y ecografías.",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Ecografías",
+      "descripcion_categoria": "Servicios de ecografía para diversas necesidades médicas, incluyendo ecografías abdominales para órganos otras abdominales para hernias, mamarias, pélvicas femenina, prostática, y de partes blandas en caso de esguinces o lesiones de articulaciones",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Chequeo Preventivo Masculino",
+      "descripcion_categoria": "Exámenes diseñados para hombres, enfocados en la prevención y detección temprana de enfermedades específicas del género, como efermedades prostáticas, cáncer de colon y en general mantenerse sano ya que muchas veces hay una familia detrás por la que hay que luchar",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Chequeo Nutricional Vegano/Vegetariano",
+      "descripcion_categoria": "En esta categoría se pueden evaluar diversos nutrientes y vitaminas esenciales, no va dirigido exclusivamente a veganos o vegetarianos, sino a toda persona que quiere chequear su perfil nutricional como adultos mayores, deportistas, niños, personas que desean comenzar a hacer deporte, etc.",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Chequeo Control Hipertensión y Diabetes",
+      "descripcion_categoria": "Exámenes para el monitoreo y control de la hipertensión y la diabetes en pacientes diagnosticados.",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Chequeo de Fertilidad Femenino",
+      "descripcion_categoria": "Evaluación de la fertilidad en mujeres mediante pruebas hormonales y otros exámenes relevantes.",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Chequeo de Salud Adulto Mayor",
+      "descripcion_categoria": "Exámenes orientados a la evaluación integral de la salud en personas adultos mayores.",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Chequeo de Fertilidad Masculino",
+      "descripcion_categoria": "Evaluación de la fertilidad en hombres mediante análisis de semen y pruebas hormonales.",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Chequeo Pulmonar / Asma / EPOC / Fumadores",
+      "descripcion_categoria": "Exámenes para evaluar la función pulmonar y detectar enfermedades respiratorias como asma, EPOC, y otras secuelas o condiciones médicas.",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Chequeo de Alergias",
+      "descripcion_categoria": "Pruebas de piel y de sangre para identificar alergias comunes y específicas en pacientes.",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Grupo Sanguíneo y Factor RH",
+      "descripcion_categoria": "Determinación del grupo sanguíneo y factor RH del paciente.",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Vacunación Fiebre Amarilla",
+      "descripcion_categoria": "Orden médica de vacunación contra la fiebre amarilla, especialmente para viajeros.",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web. Recordar al cliente que no somos vacunatorio"
+    },
+    {
+      "nombre_categoria": "Panel Infeccioso Respiratorio/Digestivo",
+      "descripcion_categoria": "Exámenes para la detección de infecciones respiratorias y digestivas mediante paneles específicos y también incluye detección de patógenos en secreciones.",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Chequeo Capilar",
+      "descripcion_categoria": "Evaluación de la salud capilar y detección de posibles afecciones del cuero cabelludo.",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Chequeo de Coagulación",
+      "descripcion_categoria": "Pruebas para evaluar la capacidad de coagulación de la sangre y detectar posibles trastornos.",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Chequeo Festivo",
+      "descripcion_categoria": "Exámenes ideales para antes o después de celebraciones intensas, enfocados en azúcar en sangre, salud del hígado, evaluación de vesícula, del páncreas, colesterol, triglicéridos y cálculos renales.",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Chequeo Detección de Metales Pesados",
+      "descripcion_categoria": "Pruebas para detectar la presencia de metales pesados en el organismo. Ideal para personas que viven en zonas de sacrificio o muy contaminadas, la mayoría son exámenes particulares",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Chequeo Salud Intestinal",
+      "descripcion_categoria": "Evaluación de la salud intestinal mediante pruebas específicas para las personas con acidez, reflujo, hinchazón persistente, dolores difusos, inflamación",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Chequeo Peri-Menopáusico",
+      "descripcion_categoria": "Exámenes orientados a mujeres en etapa peri-menopáusica para evaluar cambios hormonales y de salud, también para prevenir enfermedades asociadas.",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Detección de Sustancias y Otros",
+      "descripcion_categoria": "Pruebas para la detección de sustancias específicas (como drogas en orina) y otros exámenes complementarios (como litemia).",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Chequeo Completo Post COVID-19",
+      "descripcion_categoria": "Exámenes dirigidos a personas que tuvieron COVID-19 y presentan síntomas persistentes como fatiga o dificultad respiratoria u otros síntomas extraños posterior al contagio y recuperación de covid19.",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    },
+    {
+      "nombre_categoria": "Chequeo Personalizado",
+      "descripcion_categoria": "Servicio donde puedes solicitar un chequeo adaptado a tus necesidades si no encuentras el examen que buscas.",
+      "examenes": "Indicar al cliente que para saber sobre los exámenes específicos que incluye cada categoría, debe entrar en ella o utilizar el buscador del sitio web."
+    }
+  ]
+}
+
